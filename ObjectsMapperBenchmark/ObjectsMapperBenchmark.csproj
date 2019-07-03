@@ -6,13 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AgileObjects.AgileMapper" Version="1.1.0" />
-    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="AgileObjects.AgileMapper" Version="1.5.0-preview3" />
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
     <PackageReference Include="BenchmarkDotNet" Version="0.11.3" />
     <PackageReference Include="HolopaMir.ExpressMapper" Version="1.0.0" />
-    <PackageReference Include="Mapster" Version="3.3.1" />
+    <PackageReference Include="Mapster" Version="4.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
-    <PackageReference Include="TinyMapper" Version="3.0.1-beta" />
+    <PackageReference Include="TinyMapper" Version="3.0.2-beta" />
+    <PackageReference Include="ValueInjecter" Version="3.1.3" />
   </ItemGroup>
 
   <ItemGroup>

@@ -79,6 +79,7 @@ namespace ObjectsMapperBenchmark
 
             //Mapster don't need configuration
             //AgileMapper don't need configuration
+            //ValueInjecter don't need configuration
         }
 
         [Benchmark]
@@ -121,6 +122,13 @@ namespace ObjectsMapperBenchmark
         public SpotifyAlbum MapWithMapster()
         {
             var spotifyalbum = _spotifyAlbumDto.Adapt<SpotifyAlbum>();
+            return spotifyalbum;
+        }
+
+        [Benchmark]
+        public SpotifyAlbum MapWithValueInjecter()
+        {
+            var spotifyalbum = Omu.ValueInjecter.Mapper.Map<SpotifyAlbum>(_spotifyAlbumDto);
             return spotifyalbum;
         }
     }
